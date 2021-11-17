@@ -1,2 +1,5 @@
 # Call-Break
-A simple terminal based Call Break game
+A simple terminal based app to record a Call Break game
+
+
+
