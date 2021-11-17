@@ -1,4 +1,4 @@
-from game import CallBreak
+from call_break import CallBreak
        
 users = []
 is_game_over = False
@@ -27,11 +27,10 @@ for round in range(1, 6):
  
     game.add_data(total_score_in_this_round[0])
     if total_score_in_this_round[1]:
+            game.calculate_final_total()
             game.game_over_by_8_haat()
             break
        
-game.calculate_final_total()
-game.game_over()
-   
-       
-# scores = input("Enter scores for this round")
+if not total_score_in_this_round[1]:
+    game.calculate_final_total()
+    game.game_over()
